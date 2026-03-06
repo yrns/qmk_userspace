@@ -1,0 +1,13 @@
+* y [[./yq.png]]
+  This is roughly based on the [[https://github.com/manna-harbour/miryoku][miryoku]] layout, but with the hands
+  reversed for numbers/symbols (numpad right). There are no combos, and
+  no mouse or navigation layers yet.
+
+ #+begin_src sh
+qmk compile -kb gboards/gergoplex -km yrns
+ #+end_src
+
+#+begin_src sh
+qmk flash -kb gboards/gergoplex -km yrns
+#+end_src
+
