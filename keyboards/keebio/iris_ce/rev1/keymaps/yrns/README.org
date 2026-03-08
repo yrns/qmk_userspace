@@ -1,0 +1,6 @@
+* keymap for iris ce (rev1)
+** ref
+*** [[https://github.com/manna-harbour/miryoku/tree/master/docs/reference][miryoku/docs/reference at master · manna-harbour/miryoku]]
+*** [[https://docs.qmk.fm/keycodes][Keycodes Overview | QMK Firmware]]
+*** [[https://precondition.github.io/home-row-mods][A guide to home row mods]]
+And [[https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods][timeless-homerow-mods]] (urob).
