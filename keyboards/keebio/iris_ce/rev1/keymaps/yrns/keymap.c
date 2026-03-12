@@ -51,18 +51,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, /* */ _______, _______, _______, _______, _______, _______, _______,
         /*                      */ _______, _SPC,    _TAB, /*    */ _ENT,    _BSPC,   _DEL
     ),
+    // We are missing dedicated (non-keypad) KC_PLUS? Not sure why I had + and = reversed on the gergo.
+    // Shift works in reverse too, FYI.
+    // For Blender we need separate keys for most (all?) keypad keys.
+    // KC_PLUS is not on a 36-key layout...
     [NUM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, /* */ KC_NUM, KC_TAB, KC_PSLS, KC_ASTR, KC_PPLS, _______,
-        _______, _______, _______, _______, _______, KC_LBRC, /* */ KC_RBRC, KC_P7, KC_P8, KC_P9, KC_PMNS, _______,
-        _______, _______, _______, _______, _______, KC_LPRN, /* */ KC_RPRN, KC_P4, KC_P5, KC_P6, KC_QUOT, _______,
-        _______, KC_GRV, _______, _______, _______, _______, _______, /* */ _______, KC_BSLS, KC_P1, KC_P2, KC_P3, KC_PEQL, _______,
+        _______, _______, _______, _______, _______, _______, /*                   */ KC_NUM,  KC_TAB, KC_PSLS, KC_PAST, KC_PPLS, _______,
+        _______, _______, _______, _______, _______, KC_LBRC, /*                   */ KC_RBRC, KC_P7,  KC_P8,   KC_P9,   KC_PMNS, _______,
+        _______, _______, _______, _______, _______, KC_LPRN, /*                   */ KC_RPRN, KC_P4,  KC_P5,   KC_P6,   KC_QUOT, _______,
+        _______, KC_GRV, _______, _______, _______, _______, _______, /* */  _______, KC_BSLS, KC_P1,  KC_P2,   KC_P3,   KC_PEQL, _______,
         _______, KC_DOT, _______, /* */ KC_PENT, KC_P0, KC_PDOT
     ),
     [SYM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, /* */ _______, _______, _______, _______, _______, _______,
-        UG_TOGG, _______, _______, _______, _______, KC_LCBR, /* */ KC_RCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_UNDS, KC_NO,
-        UG_NEXT, KC_MPRV, KC_MNXT, KC_VOLU, KC_PGUP, KC_LPRN, /* */ KC_RPRN, KC_DLR,  KC_PERC, KC_CIRC, KC_DQT,  KC_NO,
-        KC_MUTE, LSFT(KC_GRV), KC_MPLY, KC_VOLD, KC_PGDN, KC_MINS, _______, /* */ _______, KC_PIPE, KC_EXLM, KC_AT, KC_HASH, KC_EQL, KC_NO,
+        _______, _______, _______, _______, _______, _______, /*                        */ _______, _______, _______, _______, _______, _______,
+        UG_TOGG, _______, _______, _______, _______, KC_LCBR, /*                        */ KC_RCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_UNDS, KC_NO,
+        UG_NEXT, KC_MPRV, KC_MNXT, KC_VOLU, KC_PGUP, KC_LPRN, /*                        */ KC_RPRN, KC_DLR,  KC_PERC, KC_CIRC, KC_DQT,  KC_NO,
+        KC_MUTE, LSFT(KC_GRV), KC_MPLY, KC_VOLD, KC_PGDN, KC_MINS, _______, /* */ _______, KC_PIPE, KC_EXLM, KC_AT,   KC_HASH, KC_EQL,  KC_NO,
         _______, _______, _______, /* */ _______, _______, _______
     ),
     [FN] = LAYOUT(

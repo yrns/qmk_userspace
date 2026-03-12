@@ -4,3 +4,4 @@
 *** [[https://docs.qmk.fm/keycodes][Keycodes Overview | QMK Firmware]]
 *** [[https://precondition.github.io/home-row-mods][A guide to home row mods]]
 And [[https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods][timeless-homerow-mods]] (urob).
+*** [[https://getreuer.info/posts/keyboards/symbol-layer/index.html][Designing a Symbol Layer]]
